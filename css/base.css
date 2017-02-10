@@ -1,0 +1,180 @@
+/* ---------------
+ base.css
+--------------- */
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Sawarabi Mincho";
+    font-size: 1.0rem;
+    }
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.clearfix:after {
+  display: block;
+  clear: both;
+  content: "";
+}
+
+/* ---------------
+ header
+--------------- */
+#top-header {
+    top: 0;
+    position: fixed;
+    margin-top: 0;
+    width: 100%;
+}
+
+#top-header li {
+    float: left;
+}
+
+#top-header .today {
+    width: 25%;
+    text-align: center;
+    font-size: 3rem;
+}
+
+#top-header .today p:nth-child(3n+1) {
+    font-size: 3rem;
+    writing-mode: vertical-rl;
+    -ms-writing-mode: tb-rl;
+     -webkit-writing-mode:vertical-rl;
+}
+
+#top-header .today p:nth-child(3n+2) {
+    font-size: 2rem;
+}
+#top-header .today p:nth-child(3n+3) {
+    font-size: 3rem;
+}
+
+
+#top-header .title{
+    width: 50%;
+    text-align: center;
+}
+
+#top-header .title h2 {
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+#top-header .inner {
+    width: 25%;
+    padding: 0;
+}
+
+#top-header .inner #mobile-header{
+    float: right;
+    width: 30px;
+}
+
+
+/* ---------------
+ header navi
+--------------- */
+
+/* Fixed reset */
+#top-header.fixed {
+    padding-top: 0;
+    background: transparent;
+}
+#mobile-header {
+    background: #fff;
+    width: 100%;
+    height: 56px;
+    z-index: 999;
+    position: relative;
+}
+#top-header.fixed .logo,
+#top-header .logo {
+    position: absolute;
+    left: 13px;
+    top: 13px;
+    color: #333;
+    font-size: 26px;
+}
+#global-nav {
+    position: absolute;
+    /* 開いてないときは画面外に配置 */
+    top: -500px;
+    background: #333;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+}
+#global-nav ul {
+    list-style: none;
+    position: static;
+    right: 0;
+    bottom: 0;
+    font-size: 14px;
+}
+#global-nav ul li {
+    float: none;
+    position: static;
+}
+#top-header #global-nav ul li a,
+#top-header.fixed #global-nav ul li a {
+    width: 100%;
+    display: block;
+    color: #fff;
+    padding: 18px 0;
+}
+#nav-toggle {
+    display: block;
+}
+/* #nav-toggle 切り替えアニメーション */
+.open #nav-toggle span:nth-child(1) {
+    top: 11px;
+    -webkit-transform: rotate(315deg);
+    -moz-transform: rotate(315deg);
+    transform: rotate(315deg);
+}
+.open #nav-toggle span:nth-child(2) {
+    width: 0;
+    left: 50%;
+}
+.open #nav-toggle span:nth-child(3) {
+    top: 11px;
+    -webkit-transform: rotate(-315deg);
+    -moz-transform: rotate(-315deg);
+    transform: rotate(-315deg);
+}
+/* #global-nav スライドアニメーション */
+.open #global-nav {
+    /* #global-nav top + #mobile-header height */
+    -moz-transform: translateY(556px);
+    -webkit-transform: translateY(556px);
+    transform: translateY(556px);
+}
+#nav-toggle span {
+    display: block;
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    background: #666;
+    left: 0;
+    -webkit-transition: .35s ease-in-out;
+    -moz-transition: .35s ease-in-out;
+    transition: .35s ease-in-out;
+}
+#nav-toggle span:nth-child(1) {
+    top: 0;
+}
+#nav-toggle span:nth-child(2) {
+    top: 11px;
+}
+#nav-toggle span:nth-child(3) {
+    top: 22px;
+}

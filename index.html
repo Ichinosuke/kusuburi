@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-language" content="ja">
+<meta charset="utf-8">
+<meta name="kwyeords" content="キーワード">
+<meta name="description" content="概要">
+<meta name="copyright" content="©2017 ichico All Rights Reserved">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+<!-- og -->
+<meta property="og:site_name" content="くすぶり女。" >
+<meta property="og:title" content="くすぶり女。TOP" >
+<meta property="og:type" content="website" >
+<meta property="og:url" content="http://kusuburi-girl.com/" >
+<meta property="og:description" content="記事の概要" >
+<meta property="og:image" content="" >
+<meta property="og:locale" content="ja_JP" >
+<!-- css(共通) -->
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" >
+<link href="https://fonts.googleapis.com/earlyaccess/sawarabimincho.css" rel="stylesheet" />
+<link rel="stylesheet" href="css/reset.css" media="ALL">
+<link rel="stylesheet" href="css/base.css" media="ALL" >
+<link rel="stylesheet" href="css/base.css" media="(max-width: 640px)" >
+<!-- css -->
+<link rel="stylesheet" href="css/index.css" media="ALL" >
+<link rel="stylesheet" href="css/index.css" media="(max-width: 640px)" >
+<!-- js -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script>
+(function($) {
+    $(function() {
+        var $header = $('#top-header');
+        // Nav Fixed
+        $(window).scroll(function() {
+            if ($(window).scrollTop() > 350) {
+                $header.addClass('fixed');
+            } else {
+                $header.removeClass('fixed');
+            }
+        });
+        // Nav Toggle Button
+        $('#nav-toggle').click(function(){
+            $header.toggleClass('open');
+        });
+    });
+})(jQuery);
+</script>
+<!-- favicon,clipicon -->
+<link rel="apple-touch-icon-precomposed" href="http://kusuburi-girl.com/webclip.png">
+<link rel=”shortcut icon” href=”/favicon.ico” />
+<title>くすぶり女。-１日3mm成長目標日記-</title>
+</head>
+
+<body>
+  <header id="top-header">
+      <ul class="clearfix">
+        <li class="today">
+          <!--today-->
+          <SCRIPT LANGUAGE="JavaScript">
+            <!--
+            mydate=new Date();
+            Ye=mydate.getFullYear()+".";
+            Mo=mydate.getMonth()+1+".";
+            Da=mydate.getDate()+"";
+            Day=mydate.getDay();
+            Day2=new Array(7);
+            Day2[0]="SUN";Day2[1]="MON";Day2[2]="TUE";
+            Day2[3]="WED";Day2[4]="THU";Day2[5]="FRI";
+            Day2[6]="SAT";
+            document.write("<p>"+Ye+"</p>"+"<p>"+Mo+Da+"</p>"+"<p>"+Day2[Day]+"</p>");
+            //-->
+            </SCRIPT>
+        </li>
+        <li class="title"><a href="">
+          <h2>くすぶり女。</h2>
+        </a></li>
+        <li class="inner">
+            <div id="mobile-header">
+                <div id="nav-toggle">
+                    <div>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+            <nav id="global-nav">
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">BLOG</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </nav>
+        </li>
+    </header>
+
+  <main id="main" class="topPage">
+    <div class="mainHero">
+      <h1>KUSUBURI GIRL.</h1>
+    </div>
+  </main>
+
+</body>
+</html>

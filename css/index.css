@@ -1,0 +1,12 @@
+/* ---------------
+ index.css
+--------------- */
+
+ #main .mainHero {
+    height: 100vh;
+    background: #0000FF;
+    background-image: url("../img/bg_glid.png");
+    background-size: auto 20vh;
+    background-position: 100% 0;
+    color: #fff;
+ }
