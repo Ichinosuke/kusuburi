@@ -8,7 +8,19 @@ html {
 body {
     font-family: "Sawarabi Mincho";
     font-size: 1.0rem;
+    background-color: #efefef;
     }
+
+* {
+    font-size: 1.6em;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+i {
+    font-size: 2rem;
+}
 
 a {
     text-decoration: none;
@@ -39,20 +51,42 @@ a {
     width: 25%;
     text-align: center;
     font-size: 3rem;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
 }
 
-#top-header .today p:nth-child(3n+1) {
-    font-size: 3rem;
+#top-header .today ul {
+    width: 4em;
+    margin: auto;
+}
+
+#top-header .today ul:after {
+  display: block;
+  clear: both;
+  content: "";
+}
+
+#top-header .today li:nth-child(2n+1){
+  float: left;
+  width: 3em;
+  text-align: left;
+}
+
+#top-header .today li:nth-child(2n+2){
+  float: right;
+  width: 1em;
+  font-size: 3rem;
     writing-mode: vertical-rl;
     -ms-writing-mode: tb-rl;
      -webkit-writing-mode:vertical-rl;
 }
 
-#top-header .today p:nth-child(3n+2) {
-    font-size: 2rem;
-}
-#top-header .today p:nth-child(3n+3) {
-    font-size: 3rem;
+#top-header .today li span {
+  display: block;
+  font-size: 1.6rem;
 }
 
 
@@ -178,3 +212,135 @@ a {
 #nav-toggle span:nth-child(3) {
     top: 22px;
 }
+
+/*---------------------
+article
+---------------------*/
+
+#article {
+
+}
+
+#article section {
+    width: 23.5%;
+    border: 5px solid #000;
+    float: left;
+    margin-right: 2%;
+    margin-bottom: 2%;
+    background-color: #FFF;
+    padding: 20px;
+}
+
+#article section:nth-child(4n) {
+    margin-right: 0;
+}
+
+#article section img {
+    width: 100%;
+    height: 600%;
+    border: 1px solid #000;
+    margin-bottom: 1em;
+}
+
+#article section p {
+    margin-bottom: .8em;
+}
+
+#article section p span{
+    padding-right: 1em;
+}
+
+#article section h3 {
+    font-size: 1.5em;
+}
+
+#article section .tag.lime {
+background: linear-gradient(transparent 60%, #66FFCC 60%);
+}
+
+
+
+/*---------------------
+footer
+---------------------*/
+
+footer .footer{
+    padding: 10px;
+    background-color: #FFFF00;
+    font-size: 2em;
+}
+
+footer .footer .title {
+    float: left;
+    font-size: 2.2em;
+    font-weight: bold;
+}
+
+footer .footer .footer_right{
+    float: right;
+}
+
+footer .footer ul {
+    float: left;
+}
+
+footer .footer li {
+    float: left;
+    border: 5px solid #fff;
+    border-radius: 100px;
+}
+
+footer .footer a {
+    float: right;
+}
+
+footer .copyright{
+    background-color: #000000;
+    color: #FFF;
+    text-align: right;
+    padding: .8em;
+    font-size: 1rem;
+}
+
+
+/*---------------------
+pager
+---------------------*/
+
+.pager  {
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.pager ul {
+    position: relative;
+    left: 50%;
+    float: left;
+}
+
+.pager ul li {
+    position: relative;
+    left: -50%;
+    float: left;
+    margin: 0 1px;
+}
+
+.pager ul li a {
+    display: block;
+    font-size: 1.5em;
+    padding: .6em 1em;
+    border-radius: 20%;
+}
+
+.pager ul li a.current {
+    background-color: #0000FF;
+    color: #FFF;
+}
+
+.pager ul a.black {
+    background-color: #000;
+    color: #FFF;
+}
+
+
+
