@@ -229,6 +229,7 @@ article
     margin-bottom: 2%;
     background-color: #FFF;
     padding: 20px;
+    position: relative;
 }
 
 #article section:nth-child(4n) {
@@ -252,13 +253,26 @@ article
 
 #article section h3 {
     font-size: 1.5em;
+    padding-right: 20px;
+    padding-right: 2rem;
+    line-height: 1.5;
 }
 
 #article section .tag.lime {
 background: linear-gradient(transparent 60%, #66FFCC 60%);
 }
 
-
+#article section i {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-size: 2em;
+    -webkit-transform: rotate(45deg);
+       -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+         -o-transform: rotate(45deg);
+            transform: rotate(45deg);
+}
 
 /*---------------------
 footer
@@ -306,7 +320,6 @@ pager
 ---------------------*/
 
 .pager  {
-    overflow: hidden;
     margin-bottom: 30px;
 }
 
@@ -320,14 +333,24 @@ pager
     position: relative;
     left: -50%;
     float: left;
-    margin: 0 1px;
+    margin: 0 5px;
 }
 
 .pager ul li a {
     display: block;
     font-size: 1.5em;
-    padding: .6em 1em;
-    border-radius: 20%;
+    padding: .6em;
+    border-radius: 15%;
+    background-color: #FFF;
+    border: 3px solid #000;
+}
+
+.pager ul li a:hover{
+    -webkit-transform: rotate(15deg);
+       -moz-transform: rotate(15deg);
+        -ms-transform: rotate(15deg);
+         -o-transform: rotate(15deg);
+            transform: rotate(15deg);
 }
 
 .pager ul li a.current {
@@ -339,6 +362,4 @@ pager
     background-color: #000;
     color: #FFF;
 }
-
-
 
