@@ -63,7 +63,7 @@
             </SCRIPT>
         </li>
         <li class="title"><a href="">
-          <h2>くすぶり女。</h2>
+          <h2 id="mainTitle">くすぶり女。</h2>
         </a></li>
         <li class="inner">
             <div id="mobile-header">
@@ -90,6 +90,23 @@
           <h1></h1>
         </div>
 
+    <!--today-->
+    <div id="fixedToday">
+        <SCRIPT LANGUAGE="JavaScript">
+            <!--
+            mydate=new Date();
+            Ye=mydate.getFullYear()+".";
+            Mo=mydate.getMonth()+1+".";
+            Da=mydate.getDate()+".";
+            Day=mydate.getDay();
+            Day2=new Array(7);
+            Day2[0]="SUN";Day2[1]="MON";Day2[2]="TUE";
+            Day2[3]="WED";Day2[4]="THU";Day2[5]="FRI";
+            Day2[6]="SAT";
+            document.write(
+                "<p>"+Ye+Mo+Da+Day2[Day]+"</p>");
+        </SCRIPT>
+    </div>
 
         <!-- 記事一覧 -->
         <article id="article" class="clearfix">
@@ -133,7 +150,7 @@
                         <span class="date">日付</span>
                         <span class="tag lime">タグ</span>
                     </p>
-                    <h3 class="title">記事タイトル</h3>
+                    <h3 class="title">記事タイトル記事タイトル</h3>
                     <i class="fa fa-arrow-right fa-2x" aria-hidden="true"></i>
                 </a>
             </section>
@@ -144,7 +161,7 @@
                         <span class="date">日付</span>
                         <span class="tag lime">タグ</span>
                     </p>
-                    <h3 class="title">記事タイトル</h3>
+                    <h3 class="title">記事タイトル記事タイトル記事タイトル記事タイトル記事タイトル記事タイトル</h3>
                     <i class="fa fa-arrow-right fa-2x" aria-hidden="true"></i>
                 </a>
             </section>
@@ -155,7 +172,7 @@
                         <span class="date">日付</span>
                         <span class="tag lime">タグ</span>
                     </p>
-                    <h3 class="title">記事タイトル</h3>
+                    <h3 class="title">記事タイトル記事タイトル記事タイトル記事タイトル記事タイトル記事タイトル</h3>
                     <i class="fa fa-arrow-right fa-2x" aria-hidden="true"></i>
                 </a>
             </section>
@@ -173,8 +190,46 @@
                 <li class="next"><a class="black" href="#">次</a></li>
             </ul>
         </div>
-
     </main>
+
+    <ul id="page-top" class="gotop clearfix">
+      <li>
+          <a href="">
+          <span class="fa-stack fa-lg">
+            <i class="fa fa-caret-up fa-stack-1x" aria-hidden="true"></i>
+          </span>
+          </a>
+      </li>
+      <li>
+          <a href="">
+          <span class="fa-stack fa-lg">
+            <i class="fa fa-square fa-stack-2x"></i>
+            <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+          </span>
+          </a>
+      </li>
+      <li>
+          <a href="">
+          <span class="fa-stack fa-lg">
+            <i class="fa fa-square fa-stack-2x"></i>
+            <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+          </span>
+          </a>
+      </li>
+      <li>
+          <a href="">
+          <span class="fa-stack fa-lg">
+            <i class="fa fa-square fa-stack-2x"></i>
+            <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+          </span>
+          </a>
+      </li>
+      <li>
+          <span class="fa-stack fa-lg">
+            <i class="fa fa-caret-down fa-stack-1x" aria-hidden="true"></i>
+          </span>
+      </li>
+    </ul>
 
     <footer>
         <div class="footer clearfix">

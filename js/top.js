@@ -3,7 +3,7 @@
 $(function(){
 $('#article').masonry({
   itemSelector: '.item',
-  isFitWidth: true,
-  isAnimated: true
+  isFitWidth: false,
+  isAnimated: true,
 });
 });

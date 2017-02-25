@@ -93,6 +93,7 @@ a {
 #top-header .title{
     width: 50%;
     text-align: center;
+    display: block;
 }
 
 #top-header .title h2 {
@@ -213,20 +214,19 @@ a {
     top: 22px;
 }
 
+
+
 /*---------------------
 article
 ---------------------*/
 
 #article {
-
 }
 
 #article section {
     width: 23.5%;
     border: 5px solid #000;
     float: left;
-    margin-right: 2%;
-    margin-bottom: 2%;
     background-color: #FFF;
     padding: 20px;
     position: relative;
@@ -361,5 +361,26 @@ pager
 .pager ul a.black {
     background-color: #000;
     color: #FFF;
+}
+
+/*---------------------
+scroll
+---------------------*/
+
+.gotop{
+    position: fixed;
+    right: 1%;
+    bottom: 50%;
+}
+
+#fixedToday {
+    position: fixed;
+    left: 1%;
+    bottom: 50%;
+    -webkit-transform: rotate(-90deg);
+       -moz-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+         -o-transform: rotate(-90deg);
+            transform: rotate(-90deg);
 }
 
