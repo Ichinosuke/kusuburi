@@ -11,29 +11,19 @@
     color: #fff;
  }
 
+#article {
+width:100%;
+padding:10px;
+border:1px solid #EEE;
+overflow:auto;
+}
 
-#wrapper {
-  position: relative;
-  max-width: 900px;
-  margin: 0 auto;   /*全体の中央寄せ*/
-}
-#container {
-  width: 100%;
-  margin: 0 auto;   /*中央寄せ*/
-  position: relative;
-}
 .item {
-  margin: 10px;
-  width: 140px;
-  padding: 8px;
-  border: 1px solid #eee;
-}
-.item.x2 {
-  width: 320px;
-}
-.item.x3 {
-  width: 500px;
-}
-.item img {
-  width: 100%;
+width:220px;
+margin:5px;
+padding:10px;
+float:left;
+background:#424242;
+color:#fff;
+display:inline;
 }
