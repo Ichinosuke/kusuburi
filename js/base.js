@@ -22,7 +22,7 @@ jQuery(function($) {
 //  scroll表示--------------------------------------------------------
 
 $(function() {
-    var topBtn = $('#page-top,#fixedToday,#mainTitle');   
+    var topBtn = $('#page-top,#fixedToday');   
     topBtn.hide();
     //スクロールが100に達したらボタン表示
     $(window).scroll(function () {
@@ -38,5 +38,17 @@ $(function() {
             scrollTop: 0
         }, 500);
         return false;
+    });
+});
+
+
+$(function() {
+    //スクロールが100に達したらボタン表示
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 800) {
+            $('#top-header').addClass('secoundTitle');
+        } else {
+            $('#top-header').removeClass('secoundTitle');
+        }
     });
 });

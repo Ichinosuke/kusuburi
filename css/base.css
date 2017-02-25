@@ -61,6 +61,7 @@ a {
 #top-header .today ul {
     width: 4em;
     margin: auto;
+    position: relative;
 }
 
 #top-header .today ul:after {
@@ -93,7 +94,7 @@ a {
 #top-header .title{
     width: 50%;
     text-align: center;
-    display: block;
+    display: none;
 }
 
 #top-header .title h2 {
@@ -103,12 +104,28 @@ a {
 
 #top-header .inner {
     width: 25%;
-    padding: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
 #top-header .inner #mobile-header{
     float: right;
     width: 30px;
+}
+
+#top-header.secoundTitle {
+    background-color: #FFF;
+    z-index: 1;
+}
+
+#top-header.secoundTitle .title{
+    display: block;
+    width: 100%;
+}
+
+#top-header.secoundTitle .today{
+    display: none;
 }
 
 
@@ -119,7 +136,6 @@ a {
 /* Fixed reset */
 #top-header.fixed {
     padding-top: 0;
-    background: transparent;
 }
 #mobile-header {
     background: #fff;

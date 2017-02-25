@@ -6,11 +6,74 @@
     height: 100vh;
     background: #0000FF;
     background-image: url("../img/bg_glid.png");
-    background-size: auto 20vh;
+    background-size: auto 15vh;
     background-position: 100% 0;
-    color: #fff;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
  }
 
+.box {
+  margin: auto;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+}
+
+.mainTitle,
+.mainImg,
+.newTopics {
+  float: left;
+}
+
+.mainTitle {
+  width: 30%;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+}
+
+.mainTitle div {
+  margin: auto 0;
+  -webkit-transform: rotate(-90deg);
+     -moz-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+       -o-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+.mainImg {
+  width: 40%;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+}
+
+.mainImg img {
+  margin: auto;
+}
+
+.newTopics {
+  width: 30%;
+  margin: auto auto 0 0 ;
+}
+
+.newTopics h4 {
+  background:rgba(0, 0, 0, 0) linear-gradient(-45deg, #fff 25%, #98ccfe 25%, #98ccfe 50%, #fff 50%, #fff 75%, #98ccfe 75%, #98ccfe) repeat scroll 0 0;
+}
+
+
+/*---------------------
+article
+---------------------*/
 
 #article {
 width:100%;
