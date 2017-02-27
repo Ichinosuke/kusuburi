@@ -48,6 +48,14 @@
           transform: rotate(-90deg);
 }
 
+.mainTitle h1 {
+  font-size: 6em;
+}
+
+.mainTitle p {
+  font-size: 2.5em;
+}
+
 .mainImg {
   width: 40%;
   display: -webkit-flex;
@@ -63,12 +71,40 @@
 
 .newTopics {
   width: 30%;
-  margin: auto auto 0 0 ;
+  margin: auto 10px 0 0 ;
 }
 
 .newTopics h4 {
-  background:rgba(0, 0, 0, 0) linear-gradient(-45deg, #fff 25%, #98ccfe 25%, #98ccfe 50%, #fff 50%, #fff 75%, #98ccfe 75%, #98ccfe) repeat scroll 0 0;
+  margin-bottom: 20px;
+  font-size: 1.5em;
 }
+
+.newTopic h4 span {
+  background:rgba(0, 0, 0, 0) linear-gradient(-60deg, #fff 10%, #98ccfe 10%, #98ccfe 50%, #fff 50%, #fff 75%, #98ccfe 75%, #98ccfe) repeat scroll 0 0;
+}
+
+.newTopics .topicBox {
+  margin: 0 15% 10px 0;
+  padding: 1em;
+  line-height: 1.8;
+  background-color: #FFF;
+  border: 2px solid #cccccc;
+  -webkit-border-radius: 15px;
+          border-radius: 15px;
+  opacity: .9;
+
+}
+
+.newTopics .topicBox i {
+  font-size: 2em;
+  -webkit-transform: rotate(45deg);
+     -moz-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+       -o-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+
 
 
 /*---------------------
@@ -77,7 +113,7 @@ article
 
 #article {
 width:100%;
-padding: 100px;
+padding: 80px;
 border:1px solid #EEE;
 overflow:auto;
 }

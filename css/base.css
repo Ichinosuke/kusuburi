@@ -105,8 +105,8 @@ a {
 #top-header .inner {
     width: 25%;
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 20px;
+    right: 3%;
 }
 
 #top-header .inner #mobile-header{
@@ -122,6 +122,7 @@ a {
 #top-header.secoundTitle .title{
     display: block;
     width: 100%;
+    margin: auto ;
 }
 
 #top-header.secoundTitle .today{
@@ -182,9 +183,11 @@ a {
     color: #fff;
     padding: 18px 0;
 }
+
 #nav-toggle {
     display: block;
 }
+
 /* #nav-toggle 切り替えアニメーション */
 .open #nav-toggle span:nth-child(1) {
     top: 11px;
@@ -192,16 +195,14 @@ a {
     -moz-transform: rotate(315deg);
     transform: rotate(315deg);
 }
+
 .open #nav-toggle span:nth-child(2) {
-    width: 0;
-    left: 50%;
-}
-.open #nav-toggle span:nth-child(3) {
     top: 11px;
     -webkit-transform: rotate(-315deg);
     -moz-transform: rotate(-315deg);
     transform: rotate(-315deg);
 }
+
 /* #global-nav スライドアニメーション */
 .open #global-nav {
     /* #global-nav top + #mobile-header height */
@@ -212,9 +213,9 @@ a {
 #nav-toggle span {
     display: block;
     position: absolute;
-    height: 4px;
+    height: 3px;
     width: 100%;
-    background: #666;
+    background: #000;
     left: 0;
     -webkit-transition: .35s ease-in-out;
     -moz-transition: .35s ease-in-out;
@@ -224,10 +225,7 @@ a {
     top: 0;
 }
 #nav-toggle span:nth-child(2) {
-    top: 11px;
-}
-#nav-toggle span:nth-child(3) {
-    top: 22px;
+    top: 15px;
 }
 
 
@@ -274,7 +272,12 @@ article
     line-height: 1.5;
 }
 
-#article section .tag.lime {
+/*#article section .tag.lime {
+background: linear-gradient(transparent 60%, #66FFCC 60%);
+}
+*/
+
+.tag.lime {
 background: linear-gradient(transparent 60%, #66FFCC 60%);
 }
 
@@ -385,18 +388,18 @@ scroll
 
 .gotop{
     position: fixed;
-    right: 1%;
+    right: 3%;
     bottom: 50%;
 }
 
 #fixedToday {
     position: fixed;
-    left: 1%;
+    left: -3%;
     bottom: 50%;
+    font-size: 1.5em;
     -webkit-transform: rotate(-90deg);
        -moz-transform: rotate(-90deg);
         -ms-transform: rotate(-90deg);
          -o-transform: rotate(-90deg);
-            transform: rotate(-90deg);
-}
+            transform: rotate(-90deg);}
 
