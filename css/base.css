@@ -388,7 +388,8 @@ scroll
 
 .gotop{
     position: fixed;
-    right: 3%;
+    right: 3%
+    ;
     bottom: 50%;
 }
 
